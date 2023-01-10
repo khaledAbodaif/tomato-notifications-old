@@ -1,6 +1,6 @@
 {
     "name": "queents/tomato-notifications",
-    "type": "project",
+    "type": "library",
     "description": "Laravel Notifications Channel with GUI to send notifications with templates",
     "keywords": [
         "Splade",
