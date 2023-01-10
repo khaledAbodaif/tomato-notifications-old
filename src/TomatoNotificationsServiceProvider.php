@@ -7,6 +7,7 @@ use Queents\TomatoNotifications\Menus\NotificationsMenu;
 use Queents\TomatoPHP\Services\Menu\TomatoMenuRegister;
 use Queents\TomatoRoles\Services\Permission;
 use Queents\TomatoRoles\Services\TomatoRoles;
+use Queents\TomatoSettings\Console\TomatoNotificationsInstall;
 
 class TomatoNotificationsServiceProvider extends ServiceProvider
 {
@@ -48,6 +49,11 @@ class TomatoNotificationsServiceProvider extends ServiceProvider
         ], 'migrations');
 
         $this->registerPermissions();
+
+        //Register install command
+        $this->commands([
+            TomatoNotificationsInstall::class
+        ]);
 
         TomatoMenuRegister::registerMenu(NotificationsMenu::class);
     }

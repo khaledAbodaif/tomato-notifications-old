@@ -13,20 +13,19 @@ class TomatoNotificationsInstall extends Command
     use HandleStub;
     use RunCommand;
 
-    private string $stubPath;
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $name = 'tomato-settings:install';
+    protected $name = 'tomato-notifications:install';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'install tomato settings package and publish assets';
+    protected $description = 'install tomato notifications package and publish assets';
 
     public function __construct()
     {
@@ -43,13 +42,10 @@ class TomatoNotificationsInstall extends Command
     public function handle()
     {
         $this->info('🍅 Publish Components Vendor Assets');
-        $this->handelFile('/resources/js/app.js', resource_path('/js/app.js'));
         $this->callSilent('optimize:clear');
-        $this->call('vendor:publish', ['--provider' => 'Queents\TomatoComponents\TomatoComponentsServiceProvider']);
-        $this->yarnCommand(['install']);
-        $this->yarnCommand(['build']);
+        $this->call('vendor:publish', ['--provider' => 'Queents\TomatoNotifications\TomatoNotificationsServiceProvider']);
         $this->artisanCommand(["migrate"]);
         $this->artisanCommand(["optimize:clear"]);
-        $this->info('🍅 Tomato Components installed successfully.');
+        $this->info('🍅 Tomato Notifications installed successfully.');
     }
 }
