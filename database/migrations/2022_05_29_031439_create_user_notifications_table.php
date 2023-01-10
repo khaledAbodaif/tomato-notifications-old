@@ -19,6 +19,7 @@ return new class extends Migration
             //If Selected Record On the model
             $table->string('model_type')->nullable();
             $table->unsignedBigInteger('model_id')->nullable();
+            $table->unsignedBigInteger('template_id')->nullable();
 
             //Else on public
             $table->string('title')->nullable();

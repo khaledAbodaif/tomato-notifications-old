@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Notifications\Traits;
+namespace Queents\TomatoNotifications\Traits;
 
-use Modules\Notifications\Entities\UserNotification;
-use Modules\Notifications\Entities\UserToken;
+use Queents\TomatoNotifications\Models\UserNotification;
+use Queents\TomatoNotifications\Models\UserToken;
 
-trait UseNotifications
+trait InteractWithNotifications
 {
 
     public function initializeUseNotifications()

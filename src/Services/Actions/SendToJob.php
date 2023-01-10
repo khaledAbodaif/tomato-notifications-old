@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\Notifications\Services\Actions;
+namespace Queents\TomatoNotifications\Services\Actions;
 
-use Modules\Notifications\Jobs\NotificationJop;
+use Queents\TomatoNotifications\Jobs\NotificationJop;
 
 trait SendToJob
 {

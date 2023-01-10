@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Notifications\Services\Actions;
+namespace Queents\TomatoNotifications\Services\Actions;
 
 trait FireEvent
 {

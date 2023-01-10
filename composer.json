@@ -42,6 +42,7 @@
     "require": {
         "php": "^8.0.2",
         "queents/tomato-admin": "^1.0",
+        "queents/tomato-settings": "^1.0",
         "queents/tomato-components": "^1.0",
         "queents/tomato-roles": "^1.0",
         "protonemedia/laravel-splade": "^1.1",
@@ -53,6 +54,7 @@
         "laravel-notification-channels/fcm": "^2.4",
         "laravel/slack-notification-channel": "^2.4",
         "laravel-notification-channels/pusher-push-notifications": "^3.0",
-        "laravel-notification-channels/messagebird": "^4.0"
+        "laravel-notification-channels/messagebird": "^4.0",
+        "spatie/laravel-translatable": "*"
     }
 }

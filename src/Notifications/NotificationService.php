@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Notifications\Notifications;
+namespace Queents\TomatoNotifications\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\SlackMessage;

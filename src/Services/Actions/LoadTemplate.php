@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\Notifications\Services\Actions;
+namespace Queents\TomatoNotifications\Services\Actions;
 
-use Modules\Notifications\Entities\NotifiactionsTemplates;
+use Queents\TomatoNotifications\Models\NotificationsTemplate;
 
 trait LoadTemplate
 {
@@ -15,7 +15,7 @@ trait LoadTemplate
         /*
          * Get Template By Key
          */
-        $this->templateModel = NotifiactionsTemplates::where('key', $this->template)->first();
+        $this->templateModel = NotificationsTemplate::where('key', $this->template)->first();
 
 
         /*

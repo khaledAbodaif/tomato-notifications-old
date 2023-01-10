@@ -1,16 +1,13 @@
 <?php
 
-namespace Modules\Notifications\Entities;
+namespace Queents\TomatoNotifications\Models;
 
 use Eloquent as Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
 class NotificationsLogs extends Model implements HasMedia
 {
-    use HasFactory;
     use InteractsWithMedia;
 
     public $table = 'notifications_logs';
@@ -27,4 +24,10 @@ class NotificationsLogs extends Model implements HasMedia
         'type',
         'provider'
     ];
+
+    public function model()
+    {
+        return $this->morphTo();
+    }
+
 }

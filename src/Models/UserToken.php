@@ -1,13 +1,11 @@
 <?php
 
-namespace Modules\Notifications\Entities;
+namespace Queents\TomatoNotifications\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class UserToken extends Model
 {
-    use HasFactory;
 
     protected $table = 'user_has_notifications';
 

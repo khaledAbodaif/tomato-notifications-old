@@ -1,16 +1,15 @@
 <?php
 
-namespace Modules\Notifications\Jobs;
+namespace Queents\TomatoNotifications\Jobs;
 
-use App\Services\SapService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Support\Facades\File;
-use Modules\Notifications\Entities\NotificationsLogs;
-use Modules\Notifications\Notifications\NotificationService;
+use Queents\TomatoNotifications\Models\NotificationsLogs;
+use Queents\TomatoNotifications\Notifications\NotificationService;
 
 class NotificationJop implements ShouldQueue
 {

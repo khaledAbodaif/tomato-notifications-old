@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Notifications\Services\Concerns;
+namespace Queents\TomatoNotifications\Services\Concerns;
 
 trait HasUser
 {

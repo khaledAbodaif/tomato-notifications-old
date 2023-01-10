@@ -1,34 +1,34 @@
 <?php
 
-namespace Modules\Notifications\Services;
+namespace Queents\TomatoNotifications\Services;
 
-use Modules\Notifications\Entities\NotifiactionsTemplates;
-use Modules\Notifications\Entities\UserNotification;
-use Modules\Notifications\Jobs\NotificationJop;
-use Modules\Notifications\Services\Actions\FireEvent;
-use Modules\Notifications\Services\Actions\LoadTemplate;
-use Modules\Notifications\Services\Actions\SendToDatabase;
-use Modules\Notifications\Services\Actions\SendToJob;
-use Modules\Notifications\Services\Concerns\HasCreatedBy;
-use Modules\Notifications\Services\Concerns\HasFindBody;
-use Modules\Notifications\Services\Concerns\HasFindTitle;
-use Modules\Notifications\Services\Concerns\HasIcon;
-use Modules\Notifications\Services\Concerns\HasId;
-use Modules\Notifications\Services\Concerns\HasImage;
-use Modules\Notifications\Services\Concerns\HasLang;
-use Modules\Notifications\Services\Concerns\HasMessage;
-use Modules\Notifications\Services\Concerns\HasModel;
-use Modules\Notifications\Services\Concerns\HasPrivacy;
-use Modules\Notifications\Services\Concerns\HasProviders;
-use Modules\Notifications\Services\Concerns\HasReplaceBody;
-use Modules\Notifications\Services\Concerns\HasReplaceTitle;
-use Modules\Notifications\Services\Concerns\HasTemplate;
-use Modules\Notifications\Services\Concerns\HasTemplateModel;
-use Modules\Notifications\Services\Concerns\HasTitle;
-use Modules\Notifications\Services\Concerns\HasType;
-use Modules\Notifications\Services\Concerns\HasUrl;
-use Modules\Notifications\Services\Concerns\HasUser;
-use Modules\Notifications\Services\Concerns\IsDatabase;
+use Queents\TomatoNotifications\Models\NotificationsTemplate;
+use Queents\TomatoNotifications\Models\UserNotification;
+use Queents\TomatoNotifications\Jobs\NotificationJop;
+use Queents\TomatoNotifications\Services\Actions\FireEvent;
+use Queents\TomatoNotifications\Services\Actions\LoadTemplate;
+use Queents\TomatoNotifications\Services\Actions\SendToDatabase;
+use Queents\TomatoNotifications\Services\Actions\SendToJob;
+use Queents\TomatoNotifications\Services\Concerns\HasCreatedBy;
+use Queents\TomatoNotifications\Services\Concerns\HasFindBody;
+use Queents\TomatoNotifications\Services\Concerns\HasFindTitle;
+use Queents\TomatoNotifications\Services\Concerns\HasIcon;
+use Queents\TomatoNotifications\Services\Concerns\HasId;
+use Queents\TomatoNotifications\Services\Concerns\HasImage;
+use Queents\TomatoNotifications\Services\Concerns\HasLang;
+use Queents\TomatoNotifications\Services\Concerns\HasMessage;
+use Queents\TomatoNotifications\Services\Concerns\HasModel;
+use Queents\TomatoNotifications\Services\Concerns\HasPrivacy;
+use Queents\TomatoNotifications\Services\Concerns\HasProviders;
+use Queents\TomatoNotifications\Services\Concerns\HasReplaceBody;
+use Queents\TomatoNotifications\Services\Concerns\HasReplaceTitle;
+use Queents\TomatoNotifications\Services\Concerns\HasTemplate;
+use Queents\TomatoNotifications\Services\Concerns\HasTemplateModel;
+use Queents\TomatoNotifications\Services\Concerns\HasTitle;
+use Queents\TomatoNotifications\Services\Concerns\HasType;
+use Queents\TomatoNotifications\Services\Concerns\HasUrl;
+use Queents\TomatoNotifications\Services\Concerns\HasUser;
+use Queents\TomatoNotifications\Services\Concerns\IsDatabase;
 
 class SendNotification
 {

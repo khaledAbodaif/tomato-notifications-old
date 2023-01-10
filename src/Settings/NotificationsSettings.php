@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Notifications\Settings;
+namespace Queents\TomatoNotifications\Settings;
 
 use Spatie\LaravelSettings\Settings;
 

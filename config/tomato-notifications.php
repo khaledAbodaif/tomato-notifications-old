@@ -1,7 +1,6 @@
 <?php
 
 use App\Models\User;
-use Modules\Accounts\Entities\Account;
 
 return [
     'name' => 'Notifications',
@@ -43,45 +42,45 @@ return [
 
     'models' => [
         "Admins" => User::class,
-        "Accounts" => Account::class,
     ],
 
     'providers' => [
         [
-            "name" => __('Database'),
-            "id" => "database"
-        ],
-        [
-            "name" => __('Email'),
+            "name" =>'Email',
             "id" => "email"
         ],
         [
-            "name" => __('Slack'),
+            "name" =>'Slack',
             "id" => "slack",
         ],
         [
-            "name" => __('Discord'),
+            "name" => 'Discord',
             "id" => "discord"
         ],
         [
-            "name" => __('FCM Web'),
+            "name" => 'FCM Web',
             "id" => "fcm-web"
         ],
         [
-            "name" => __('FCM Mobile'),
+            "name" => 'FCM Mobile',
             "id" => "fcm-api"
         ],
         [
-            "name" => __('Pusher Web'),
+            "name" => 'Pusher Web',
             "id" => "pusher-web"
         ],
         [
-            "name" => __('Pusher Mobile'),
+            "name" => 'Pusher Mobile',
             "id" => "pusher-api"
         ],
         [
-            "name" => __('SMS MessageBird'),
+            "name" => 'SMS MessageBird',
             "id" => "sms-messagebird"
         ]
     ],
+
+    "lang" => [
+        "ar" => "arabic",
+        "en" => "english"
+    ]
 ];

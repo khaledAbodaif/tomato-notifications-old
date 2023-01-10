@@ -1,16 +1,13 @@
 <?php
 
-namespace Modules\Notifications\Entities;
+namespace Queents\TomatoNotifications\Models;
 
 use Eloquent as Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
 class UserNotification extends Model implements HasMedia
 {
-    use HasFactory;
     use InteractsWithMedia;
 
     public $table = 'user_notifications';
@@ -44,6 +41,6 @@ class UserNotification extends Model implements HasMedia
 
     public function template()
     {
-        return $this->hasOne(NotifiactionsTemplates::class, 'id', 'id');
+        return $this->hasOne(NotificationsTemplate::class, 'id', 'id');
     }
 }
