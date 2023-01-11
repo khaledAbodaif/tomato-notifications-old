@@ -1,6 +1,6 @@
 <?php
 
-namespace Queents\TomatoSettings\Console;
+namespace Queents\TomatoNotifications\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
