@@ -35,7 +35,7 @@ class TomatoNotificationsServiceProvider extends ServiceProvider
 
         //Publish Config
         $this->publishes([
-            __DIR__.'/../config/tomato-settings.php' => config_path('tomato-notifications.php'),
+            __DIR__.'/../config/tomato-notifications.php' => config_path('tomato-notifications.php'),
         ], 'config');
 
         //Publish Lang
