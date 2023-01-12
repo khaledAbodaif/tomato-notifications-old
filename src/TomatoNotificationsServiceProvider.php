@@ -48,14 +48,14 @@ class TomatoNotificationsServiceProvider extends ServiceProvider
             __DIR__.'/../database/migrations' => database_path('migrations'),
         ], 'migrations');
 
-        $this->registerPermissions();
-
         //Register install command
         $this->commands([
             TomatoNotificationsInstall::class
         ]);
 
         TomatoMenuRegister::registerMenu(NotificationsMenu::class);
+
+        $this->registerPermissions();
     }
 
     public function boot(): void
