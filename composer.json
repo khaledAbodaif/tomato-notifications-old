@@ -45,8 +45,6 @@
         "queents/tomato-settings": "^1.0",
         "queents/tomato-components": "^1.0",
         "queents/tomato-roles": "^1.0",
-        "protonemedia/laravel-splade": "^1.1",
-        "protonemedia/laravel-splade-breeze": "^2.1",
         "queents/console-helpers": "^1.0",
         "kreait/firebase-php": "6.3.1",
         "kreait/firebase-tokens": "3.0",
