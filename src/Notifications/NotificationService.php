@@ -37,7 +37,7 @@ class NotificationService extends Notification
     public ?string $provider;
     public ?string $phone;
     public ?string $email;
-
+    public ?string $data;
     /**
      * Create a new notification instance.
      *
@@ -56,6 +56,7 @@ class NotificationService extends Notification
         $modelId = null,
         $phone = null,
         $email = null,
+        $data = null,
     )
     {
         $this->title = $title;
@@ -131,6 +132,7 @@ class NotificationService extends Notification
                 'privacy' => $this->privacy,
                 'model' => (string)$this->model,
                 'model_id' => (string)$this->modelId,
+                'data' =>  $this->data??"" ,
             ])
             ->setNotification(\NotificationChannels\Fcm\Resources\Notification::create()
                 ->setTitle($this->title)
@@ -163,6 +165,7 @@ class NotificationService extends Notification
             ->setOption('privacy', $this->privacy)
             ->setOption('model', $this->model)
             ->setOption('model_id', $this->modelId)
+            ->setOption('data', $this->data)
             ->withAndroid(
                 PusherMessage::create()
                     ->IOS()

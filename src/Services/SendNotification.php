@@ -10,6 +10,7 @@ use Queents\TomatoNotifications\Services\Actions\LoadTemplate;
 use Queents\TomatoNotifications\Services\Actions\SendToDatabase;
 use Queents\TomatoNotifications\Services\Actions\SendToJob;
 use Queents\TomatoNotifications\Services\Concerns\HasCreatedBy;
+use Queents\TomatoNotifications\Services\Concerns\HasData;
 use Queents\TomatoNotifications\Services\Concerns\HasFindBody;
 use Queents\TomatoNotifications\Services\Concerns\HasFindTitle;
 use Queents\TomatoNotifications\Services\Concerns\HasIcon;
@@ -52,7 +53,7 @@ class SendNotification
     use HasLang;
     use HasTemplateModel;
     use IsDatabase;
-
+    use HasData;
     /*
      * Actions
      */
