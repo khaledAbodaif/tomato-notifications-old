@@ -1,8 +1,8 @@
 <?php
 
-namespace Queents\TomatoNotifications\Services\Actions;
+namespace TomatoPHP\TomatoNotifications\Services\Actions;
 
-use Queents\TomatoNotifications\Entities\UserNotification;
+use TomatoPHP\TomatoNotifications\Models\UserNotification;
 
 trait SendToDatabase
 {

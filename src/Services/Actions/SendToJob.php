@@ -1,8 +1,8 @@
 <?php
 
-namespace Queents\TomatoNotifications\Services\Actions;
+namespace TomatoPHP\TomatoNotifications\Services\Actions;
 
-use Queents\TomatoNotifications\Jobs\NotificationJop;
+use TomatoPHP\TomatoNotifications\Jobs\NotificationJop;
 
 trait SendToJob
 {
@@ -26,7 +26,8 @@ trait SendToJob
                 "privacy" => $this->privacy,
                 "provider" => $provider,
                 "model" => $this->model,
-                "model_id" => $this->user->id
+                "model_id" => $this->user->id,
+                "data" => $this->data
             ];
 
             if (!empty($this->template)) {

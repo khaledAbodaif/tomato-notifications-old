@@ -1,9 +1,9 @@
 <?php
 
-namespace Queents\TomatoNotifications\Traits;
+namespace TomatoPHP\TomatoNotifications\Traits;
 
-use Queents\TomatoNotifications\Models\UserNotification;
-use Queents\TomatoNotifications\Models\UserToken;
+use TomatoPHP\TomatoNotifications\Models\UserNotification;
+use TomatoPHP\TomatoNotifications\Models\UserToken;
 
 trait InteractWithNotifications
 {

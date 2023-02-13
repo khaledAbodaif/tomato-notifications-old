@@ -1,6 +1,6 @@
 <?php
 
-namespace Queents\TomatoNotifications\Services\Actions;
+namespace TomatoPHP\TomatoNotifications\Services\Actions;
 
 trait FireEvent
 {

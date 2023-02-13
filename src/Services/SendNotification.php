@@ -1,34 +1,35 @@
 <?php
 
-namespace Queents\TomatoNotifications\Services;
+namespace TomatoPHP\TomatoNotifications\Services;
 
-use Queents\TomatoNotifications\Models\NotificationsTemplate;
-use Queents\TomatoNotifications\Models\UserNotification;
-use Queents\TomatoNotifications\Jobs\NotificationJop;
-use Queents\TomatoNotifications\Services\Actions\FireEvent;
-use Queents\TomatoNotifications\Services\Actions\LoadTemplate;
-use Queents\TomatoNotifications\Services\Actions\SendToDatabase;
-use Queents\TomatoNotifications\Services\Actions\SendToJob;
-use Queents\TomatoNotifications\Services\Concerns\HasCreatedBy;
-use Queents\TomatoNotifications\Services\Concerns\HasFindBody;
-use Queents\TomatoNotifications\Services\Concerns\HasFindTitle;
-use Queents\TomatoNotifications\Services\Concerns\HasIcon;
-use Queents\TomatoNotifications\Services\Concerns\HasId;
-use Queents\TomatoNotifications\Services\Concerns\HasImage;
-use Queents\TomatoNotifications\Services\Concerns\HasLang;
-use Queents\TomatoNotifications\Services\Concerns\HasMessage;
-use Queents\TomatoNotifications\Services\Concerns\HasModel;
-use Queents\TomatoNotifications\Services\Concerns\HasPrivacy;
-use Queents\TomatoNotifications\Services\Concerns\HasProviders;
-use Queents\TomatoNotifications\Services\Concerns\HasReplaceBody;
-use Queents\TomatoNotifications\Services\Concerns\HasReplaceTitle;
-use Queents\TomatoNotifications\Services\Concerns\HasTemplate;
-use Queents\TomatoNotifications\Services\Concerns\HasTemplateModel;
-use Queents\TomatoNotifications\Services\Concerns\HasTitle;
-use Queents\TomatoNotifications\Services\Concerns\HasType;
-use Queents\TomatoNotifications\Services\Concerns\HasUrl;
-use Queents\TomatoNotifications\Services\Concerns\HasUser;
-use Queents\TomatoNotifications\Services\Concerns\IsDatabase;
+use TomatoPHP\TomatoNotifications\Models\NotificationsTemplate;
+use TomatoPHP\TomatoNotifications\Models\UserNotification;
+use TomatoPHP\TomatoNotifications\Jobs\NotificationJop;
+use TomatoPHP\TomatoNotifications\Services\Actions\FireEvent;
+use TomatoPHP\TomatoNotifications\Services\Actions\LoadTemplate;
+use TomatoPHP\TomatoNotifications\Services\Actions\SendToDatabase;
+use TomatoPHP\TomatoNotifications\Services\Actions\SendToJob;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasCreatedBy;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasData;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasFindBody;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasFindTitle;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasIcon;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasId;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasImage;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasLang;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasMessage;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasModel;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasPrivacy;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasProviders;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasReplaceBody;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasReplaceTitle;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasTemplate;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasTemplateModel;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasTitle;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasType;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasUrl;
+use TomatoPHP\TomatoNotifications\Services\Concerns\HasUser;
+use TomatoPHP\TomatoNotifications\Services\Concerns\IsDatabase;
 
 class SendNotification
 {
@@ -60,7 +61,7 @@ class SendNotification
     use LoadTemplate;
     use SendToDatabase;
     use SendToJob;
-
+    use HasData;
     /**
      * @param ?array $providers
      * @return static

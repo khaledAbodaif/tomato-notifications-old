@@ -1,14 +1,14 @@
 <?php
 
-namespace Queents\TomatoNotifications\Http\Controllers;
+namespace TomatoPHP\TomatoNotifications\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use ProtoneMedia\Splade\Facades\Toast;
-use Queents\TomatoNotifications\Models\NotificationsTemplate;
-use Queents\TomatoNotifications\Models\UserNotification;
-use Queents\TomatoNotifications\Models\UserToken;
+use TomatoPHP\TomatoNotifications\Models\NotificationsTemplate;
+use TomatoPHP\TomatoNotifications\Models\UserNotification;
+use TomatoPHP\TomatoNotifications\Models\UserToken;
 
 class NotificationsController extends Controller
 {

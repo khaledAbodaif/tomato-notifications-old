@@ -1,6 +1,6 @@
 <?php
 
-namespace Queents\TomatoNotifications\Http\Controllers;
+namespace TomatoPHP\TomatoNotifications\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
@@ -8,13 +8,13 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use ProtoneMedia\Splade\Facades\Toast;
-use Queents\TomatoNotifications\Http\Requests\UserNotification\UserNotificationStoreRequest;
-use Queents\TomatoNotifications\Http\Requests\UserNotification\UserNotificationUpdateRequest;
-use Queents\TomatoNotifications\Models\NotificationsTemplate;
-use Queents\TomatoNotifications\Models\UserNotification;
-use Queents\TomatoNotifications\Services\SendNotification;
-use Queents\TomatoNotifications\Tables\UserNotificationTable;
-use Queents\TomatoPHP\Services\Tomato;
+use TomatoPHP\TomatoNotifications\Http\Requests\UserNotification\UserNotificationStoreRequest;
+use TomatoPHP\TomatoNotifications\Http\Requests\UserNotification\UserNotificationUpdateRequest;
+use TomatoPHP\TomatoNotifications\Models\NotificationsTemplate;
+use TomatoPHP\TomatoNotifications\Models\UserNotification;
+use TomatoPHP\TomatoNotifications\Services\SendNotification;
+use TomatoPHP\TomatoNotifications\Tables\UserNotificationTable;
+use TomatoPHP\TomatoPHP\Services\Tomato;
 
 class UserNotificationController extends Controller
 {

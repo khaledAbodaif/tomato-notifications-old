@@ -1,17 +1,17 @@
 <?php
 
-namespace Queents\TomatoNotifications\Http\Controllers;
+namespace TomatoPHP\TomatoNotifications\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-use Queents\TomatoNotifications\Http\Requests\NotificationsLog\NotificationsLogStoreRequest;
-use Queents\TomatoNotifications\Http\Requests\NotificationsLog\NotificationsLogUpdateRequest;
-use Queents\TomatoNotifications\Models\NotificationsLogs;
-use Queents\TomatoNotifications\Tables\NotificationsLogTable;
-use Queents\TomatoPHP\Services\Tomato;
+use TomatoPHP\TomatoNotifications\Http\Requests\NotificationsLog\NotificationsLogStoreRequest;
+use TomatoPHP\TomatoNotifications\Http\Requests\NotificationsLog\NotificationsLogUpdateRequest;
+use TomatoPHP\TomatoNotifications\Models\NotificationsLogs;
+use TomatoPHP\TomatoNotifications\Tables\NotificationsLogTable;
+use TomatoPHP\TomatoPHP\Services\Tomato;
 
 class NotificationsLogController extends Controller
 {

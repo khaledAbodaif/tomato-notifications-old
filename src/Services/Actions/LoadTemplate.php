@@ -1,8 +1,8 @@
 <?php
 
-namespace Queents\TomatoNotifications\Services\Actions;
+namespace TomatoPHP\TomatoNotifications\Services\Actions;
 
-use Queents\TomatoNotifications\Models\NotificationsTemplate;
+use TomatoPHP\TomatoNotifications\Models\NotificationsTemplate;
 
 trait LoadTemplate
 {

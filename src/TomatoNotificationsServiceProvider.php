@@ -1,13 +1,13 @@
 <?php
 
-namespace Queents\TomatoNotifications;
+namespace TomatoPHP\TomatoNotifications;
 
 use Illuminate\Support\ServiceProvider;
-use Queents\TomatoNotifications\Console\TomatoNotificationsInstall;
-use Queents\TomatoNotifications\Menus\NotificationsMenu;
-use Queents\TomatoPHP\Services\Menu\TomatoMenuRegister;
-use Queents\TomatoRoles\Services\Permission;
-use Queents\TomatoRoles\Services\TomatoRoles;
+use TomatoPHP\TomatoNotifications\Console\TomatoNotificationsInstall;
+use TomatoPHP\TomatoNotifications\Menus\NotificationsMenu;
+use TomatoPHP\TomatoPHP\Services\Menu\TomatoMenuRegister;
+use TomatoPHP\TomatoRoles\Services\Permission;
+use TomatoPHP\TomatoRoles\Services\TomatoRoles;
 
 class TomatoNotificationsServiceProvider extends ServiceProvider
 {
