@@ -1,12 +1,12 @@
 <?php
 
-namespace Queents\TomatoNotifications\Console;
+namespace TomatoPHP\TomatoNotifications\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Queents\ConsoleHelpers\Traits\HandleStub;
-use Queents\ConsoleHelpers\Traits\RunCommand;
+use TomatoPHP\ConsoleHelpers\Traits\HandleStub;
+use TomatoPHP\ConsoleHelpers\Traits\RunCommand;
 
 class TomatoNotificationsInstall extends Command
 {
@@ -43,7 +43,7 @@ class TomatoNotificationsInstall extends Command
     {
         $this->info('🍅 Publish Components Vendor Assets');
         $this->callSilent('optimize:clear');
-        $this->call('vendor:publish', ['--provider' => 'Queents\TomatoNotifications\TomatoNotificationsServiceProvider']);
+        $this->call('vendor:publish', ['--provider' => 'TomatoPHP\TomatoNotifications\TomatoNotificationsServiceProvider']);
         $this->artisanCommand(["migrate"]);
         $this->artisanCommand(["optimize:clear"]);
         $this->info('🍅 Tomato Notifications installed successfully.');

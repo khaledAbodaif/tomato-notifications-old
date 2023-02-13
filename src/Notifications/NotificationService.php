@@ -1,6 +1,6 @@
 <?php
 
-namespace Queents\TomatoNotifications\Notifications;
+namespace TomatoPHP\TomatoNotifications\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\SlackMessage;
@@ -132,7 +132,6 @@ class NotificationService extends Notification
                 'privacy' => $this->privacy,
                 'model' => (string)$this->model,
                 'model_id' => (string)$this->modelId,
-                'data' =>  $this->data??"" ,
             ])
             ->setNotification(\NotificationChannels\Fcm\Resources\Notification::create()
                 ->setTitle($this->title)

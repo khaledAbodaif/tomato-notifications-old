@@ -1,9 +1,9 @@
 <?php
 
-namespace Queents\TomatoNotifications\Menus;
+namespace TomatoPHP\TomatoNotifications\Menus;
 
-use Queents\TomatoPHP\Services\Menu\Menu;
-use Queents\TomatoPHP\Services\Menu\TomatoMenu;
+use TomatoPHP\TomatoPHP\Services\Menu\Menu;
+use TomatoPHP\TomatoPHP\Services\Menu\TomatoMenu;
 
 class NotificationsMenu extends TomatoMenu
 {

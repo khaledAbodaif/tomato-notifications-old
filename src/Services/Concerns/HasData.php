@@ -1,6 +1,8 @@
 <?php
 
-namespace Queents\TomatoNotifications\Services\Concerns;
+
+namespace TomatoPHP\TomatoNotifications\Services\Concerns;
+
 
 trait HasData
 {

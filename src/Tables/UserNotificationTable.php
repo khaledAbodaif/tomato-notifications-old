@@ -1,6 +1,6 @@
 <?php
 
-namespace Queents\TomatoNotifications\Tables;
+namespace TomatoPHP\TomatoNotifications\Tables;
 
 use Illuminate\Http\Request;
 use ProtoneMedia\Splade\AbstractTable;
@@ -36,7 +36,7 @@ class UserNotificationTable extends AbstractTable
      */
     public function for()
     {
-        return \Queents\TomatoNotifications\Models\UserNotification::query();
+        return \TomatoPHP\TomatoNotifications\Models\UserNotification::query();
     }
 
     /**
@@ -51,7 +51,7 @@ class UserNotificationTable extends AbstractTable
             ->withGlobalSearch(label: trans('tomato-admin::global.search'),columns: ['id',])
             ->bulkAction(
                 label: trans('tomato-admin::global.crud.delete'),
-                each: fn (\Queents\TomatoNotifications\Models\UserNotification $model) => $model->delete(),
+                each: fn (\TomatoPHP\TomatoNotifications\Models\UserNotification $model) => $model->delete(),
                 after: fn () => Toast::danger(trans('tomato-notifications::global.notifications.delete'))->autoDismiss(2),
                 confirm: true
             )

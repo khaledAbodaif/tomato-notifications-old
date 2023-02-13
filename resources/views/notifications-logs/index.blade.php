@@ -13,7 +13,7 @@
 
     <div class="pb-12" v-cloak>
         <div class="mx-auto">
-            @if(\Queents\TomatoNotifications\Models\NotificationsLogs::count())
+            @if(\TomatoPHP\TomatoNotifications\Models\NotificationsLogs::count())
             <x-splade-table :for="$table" striped>
                 <x-splade-cell actions>
                     <div class="flex justify-start">

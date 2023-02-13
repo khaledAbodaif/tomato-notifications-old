@@ -1,6 +1,6 @@
 <?php
 
-namespace Queents\TomatoNotifications\Jobs;
+namespace TomatoPHP\TomatoNotifications\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
@@ -8,8 +8,8 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Support\Facades\File;
-use Queents\TomatoNotifications\Models\NotificationsLogs;
-use Queents\TomatoNotifications\Notifications\NotificationService;
+use TomatoPHP\TomatoNotifications\Models\NotificationsLogs;
+use TomatoPHP\TomatoNotifications\Notifications\NotificationService;
 
 class NotificationJop implements ShouldQueue
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Queents\TomatoNotifications\Models;
+namespace TomatoPHP\TomatoNotifications\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Queents\TomatoNotifications\Http\Controllers;
+namespace TomatoPHP\TomatoNotifications\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Queents\TomatoNotifications\Http\Requests\Settings\NotificationsSettingsRequest;
-use Queents\TomatoNotifications\Settings\NotificationsSettings;
-use Queents\TomatoSettings\Services\Setting;
+use TomatoPHP\TomatoNotifications\Http\Requests\Settings\NotificationsSettingsRequest;
+use TomatoPHP\TomatoNotifications\Settings\NotificationsSettings;
+use TomatoPHP\TomatoSettings\Services\Setting;
 
 class NotificationsSettingsController extends Setting
 {
